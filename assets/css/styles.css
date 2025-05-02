@@ -1,0 +1,180 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  scroll-behavior: smooth;
+  text-decoration: none;
+  font-family: 'Noto Serif JP', serif;
+}
+:root {
+  --text-color: #000;
+  --second-text-color: #006E91;
+  --third-text-color: #fff;
+  --button-color: #006E91;
+  --hover-color: #2C92B2;
+  --bg-color: #ffffff;
+  --second-bg-color: #2C92B2;
+  --big-font: 2.5rem;
+  --normal-font: 1.5rem;
+  --transition: all 0.3s ease;
+}
+/* Scrollbar------------- */
+::-webkit-scrollbar {
+  height: 0;
+  width: 0.5rem;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-color);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--second-bg-color);
+  border-radius: 5rem;
+}
+
+body {
+  padding-top: 70px;
+  overflow-x: hidden;
+}
+
+
+/* Footer Section-- */
+.footer-section {
+  background: #764a00;
+  color: #ffffff;
+  padding: 50px 0;
+  text-align: left;
+}
+
+.footer-logo {
+  width: 150px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+/* About Content */
+.footer-about {
+  width: 50%;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+/* Contact Info */
+.contact-info {
+  margin-bottom: 20px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+}
+
+.contact-item i {
+  color: #fff;
+}
+
+/* Address */
+.address {
+  display: flex;
+  align-items: left;
+  gap: 10px;
+}
+
+.address i {
+  color: #fff;
+}
+
+/* Social Icons */
+.social-icons a {
+  color: white;
+  font-size: 28px;
+  margin-right: 10px;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #ff7f00;
+}
+  /* Floating Buttons Container - Fixed Positioning */
+  .floating-buttons-container {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    flex-direction: column-reverse; /* WhatsApp on bottom, Back-to-top above */
+    gap: 15px;
+    z-index: 9999; /* Ensure it stays above other elements */
+  }
+
+  /* Shared Button Styles */
+  .floating-btn {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+    position: relative; /* For absolute positioning of tooltips if needed */
+  }
+
+  /* WhatsApp Button */
+  .whatsapp-btn {
+    background: #25D366;
+    text-decoration: none;
+  }
+  .whatsapp-btn:hover {
+    background: #128C7E;
+    transform: scale(1.1);
+  }
+
+  /* Back to Top Button */
+  .back-to-top {
+    background: #603c00;
+    display: none; 
+  }
+  .back-to-top:hover {
+    background: #ffffff;
+    color: #764a00;
+    transform: scale(1.1);
+  }
+
+  /* Show back-to-top button when scrolling */
+  .back-to-top.visible {
+    display: flex;
+  }
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-logo {
+    text-align: left;
+  }
+  .footer-about {
+    width: 80%;
+  }
+  .contact-info {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .social-icons {
+    text-align: center;
+    margin-top: 10px;
+  }
+  .social-icons a{
+    font-size: 25px;
+  }
+  .floating-btn{
+    width: 40px;
+    height: 40px;
+    font-size: 19px;
+  }
+}
+
