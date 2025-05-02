@@ -11,7 +11,7 @@
       rel="stylesheet"
       href="/assets/vendor/bootstrap/css/bootstrap.min.css"
     />
-    <link rel="icon" type="image/png" href="/assets/images/new-logo.png" />
+    <link rel="icon" type="image/png" href="/assets/images/above_logo.png" />
 
     <link
       rel="stylesheet"
@@ -32,89 +32,198 @@
       rel="stylesheet"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    
+    <!-- Navbar Section -->
+    <header class="fixed-top">
+      <div class="logo">
+        <a href="/index.html">
+          <img src="/assets/images/above_logo.png" alt="above ability logo"
+        /></a>
+      </div>
+      <ul class="navlist">
+        <li>
+          <a href="index.html" style="--i: 1" class="nav-link active">Home</a>
+        </li>
+        <li>
+          <a href="/pages/about.html" style="--i: 2" class="nav-link"
+            >About Us</a
+          >
+        </li>
+        <li>
+          <a href="/pages/service.html" style="--i: 3" class="nav-link"
+            >Services</a
+          >
+        </li>
+        <li>
+          <a href="/pages/career.html" style="--i: 4" class="nav-link"
+            >Career</a
+          >
+        </li>
 
+        <li></li>
 
-    <!-- Footer Section---- -->
-    <footer
-      class="footer-section"
-      data-aos="fade-down"
-      data-aos-easing="ease-in-sine"
-      data-aos-anchor-placement="top-bottom"
-      data-aos-duration="1000"
-    >
+        <li>
+          <a
+            href="/pages/login.html"
+            style="--i: 6"
+            class="nav-link get-involved"
+            >Get Started</a
+          >
+        </li>
+        <li>
+          <a
+            href="/pages/account.html"
+            style="--i: 7"
+            class="nav-link contact-us"
+            >Contact</a
+          >
+        </li>
+      </ul>
+      <div id="menu-icon" class="bx bx-menu"></div>
+    </header>
+
+    <!-- Hero Section------ -->
+    <section class="hero-section mb-5">
+      <div class="slider-container">
+        <div class="slider-track">
+          <!-- Slide 1 -->
+          <div class="slide active">
+            <div class="slide-content">
+              <div class="text-content text-center">
+                <h1 class="hero-heading mt-5 text-center">
+                  We place our <span class="text-hero">Clients</span> at the
+                  center of all
+                  <span class="text-hero">Decision making</span>
+                </h1>
+                <p class="text-muted">
+                  Our vision is to provide our clients and their families with
+                  outstanding Home Care Service
+                </p>
+                <a href="#" class="btn hero-btn text-center">Get Started</a>
+              </div>
+              <div class="image-content">
+                <img
+                  src="/assets/images/hero.png"
+                  alt="Healthcare Service"
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+            <div class="decorative-image top-left">
+              <img src="/assets/images/left-line.png" alt="Decorative Icon" />
+            </div>
+            <div class="decorative-image bottom-right">
+              <img src="/assets/images/right-line.png" alt="Decorative Icon" />
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="slide">
+            <div class="slide-content">
+              <div class="text-content text-center">
+                <h1 class="hero-heading mt-5 text-center">
+                  Compassionate <span class="text-hero">Support</span> for
+                  <span class="text-hero">Seniors</span>
+                </h1>
+                <p class="text-muted">
+                  Dignified care that enhances quality of life
+                </p>
+                <a href="#" class="btn hero-btn">Get Started</a>
+              </div>
+              <div class="image-content">
+                <img
+                  src="/assets/images/hero2.png"
+                  alt="Senior Care"
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+            <div class="decorative-image top-left">
+              <img src="/assets/images/left-line.png" alt="Decorative Icon" />
+            </div>
+            <div class="decorative-image bottom-right">
+              <img src="/assets/images/right-line.png" alt="Decorative Icon" />
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="slide">
+            <div class="slide-content">
+              <div class="text-content text-center">
+                <h1 class="hero-heading mt-5 text-center">
+                  Specialized <span class="text-hero">Therapies</span> for
+                  <span class="text-hero">Recovery</span>
+                </h1>
+                <p class="text-muted">
+                  Innovative approaches to rehabilitation and wellness
+                </p>
+                <a href="#" class="btn hero-btn">Get Started</a>
+              </div>
+              <div class="image-content">
+                <img
+                  src="/assets/images/hero3.jpg"
+                  alt="Therapy Session"
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+            <div class="decorative-image top-left">
+              <img src="/assets/images/left-line.png" alt="Decorative Icon" />
+            </div>
+            <div class="decorative-image bottom-right">
+              <img src="/assets/images/right-line.png" alt="Decorative Icon" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Slider Controls -->
+        <button class="slider-control prev">❮</button>
+        <button class="slider-control next">❯</button>
+
+        <!-- Slider Indicators -->
+        <!-- <div class="slider-indicators">
+          <span class="indicator active"></span>
+          <span class="indicator"></span>
+          <span class="indicator"></span>
+        </div> -->
+      </div>
+    </section>
+
+    <!-- Intro Section----- -->
+    <section class="intro-section">
       <div class="container">
-        <!-- Logo -->
-        <div class="row">
-          <div class="col-12">
-            <a href="/index.html">
+        <div class="intro-content">
+          <h1 class="hero-heading text-start">
+            Our <span class="text-hero">Agency</span> is to foster
+            <span class="text-hero">Independence</span> and
+            <span class="text-hero">Dignity</span>
+          </h1>
+
+          <div class="intro-body">
+            <div class="decorative-image-left">
               <img
-                src="/assets/images/new-logo.png"
-                alt="Wealth Living Healthcare"
-                class="footer-logo"
-            /></a>
-          </div>
-        </div>
+                src="assets/images/left-line.png"
+                alt="Healthcare decorative illustration"
+              />
+            </div>
 
-        <!-- First Section: About Content -->
-        <div class="row">
-          <div class="col-md-12">
-            <p class="footer-about">
-              Wealth Living Healthcare is committed to providing top-tier
-              medical services, ensuring the best patient care with a blend of
-              innovation and compassion.
-            </p>
-          </div>
-        </div>
-
-        <!-- Second Section: Email & Phone -->
-        <div class="row contact-info">
-          <div class="col-md-12 mb-3">
-            <div class="contact-item">
-              <i class="fas fa-envelope"></i>
-              <a href="mailto:info@welihealthcare.com" class="text-white">
-                info@welihealthcare.com
-              </a>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="contact-item">
-              <i class="fas fa-phone-alt"></i>
-              <a href="tel:+13462191008" class="text-white">+13462191008</a>
-            </div>
-          </div>
-        </div>
-        <!-- Third Section: Address & Social Media -->
-        <div class="row">
-          <div class="col-md-6 text-start">
-            <div class="address">
-              <i class="fas fa-map-marker-alt"></i>
-              <p>3007 Stephen Howard court, Missouri city TX 77459</p>
-            </div>
-          </div>
-          <div class="col-md-6 text-md-end text-center">
-            <div class="social-icons">
-              <a href="https://www.facebook.com/share/1A7nFQeMjf/"
-                ><i class="fab fa-facebook-f"></i
-              ></a>
-              <a href="https://Wa.me/13462191008"
-                ><i class="bx bxl-whatsapp"></i
-              ></a>
-              <a
-                href="https://www.instagram.com/wealthy_living_healthcare?igsh=dnJobXlpam1iZWMz"
-                ><i class="fab fa-instagram"></i
-              ></a>
-              <a href="http://tiktok.com/@wealthyliving.hea"
-                ><i class="bx bxl-tiktok"></i
-              ></a>
+            <div class="intro-text">
+              <p class="description">
+                Our skilled and compassionate team of homemakers are able to
+                assist with in-home senior support, post hospital and respite
+                assistance
+              </p>
             </div>
           </div>
         </div>
       </div>
-    </footer>
+    </section>
+
     <div class="floating-buttons-container">
       <!-- Back to Top Button -->
       <button class="floating-btn back-to-top" aria-label="Back to Top">
@@ -143,11 +252,7 @@
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         document.title =
-          "Above Ability Healthcare: Discover trusted healthcare services, expert medical advice, and compassionate care tailored to your needs. Your health and well-being are our top priorities.!"; 
-        document.body.setAttribute(
-          "title",
-          "Discover trusted healthcare services, expert medical advice, and compassionate care tailored to your needs. Your health and well-being are our top priorities."
-        );
+          "Above Ability Healthcare: Discover trusted healthcare services, expert medical advice, and compassionate care tailored to your needs. Your health and well-being are our top priorities.!";
       });
     </script>
   </body>
