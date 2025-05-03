@@ -908,8 +908,8 @@ header .navlist a:hover::after {
   width: 250px;
 }
 .vision-decorative-image {
-  top: -40% !important;
-  left: -5% !important;
+  /* top: -40% !important;
+  left: -2% !important; */
   position: relative;
 }
 .vision-decorative-image img {
@@ -933,11 +933,11 @@ header .navlist a:hover::after {
   }
   .mission-decorative-image {
     top: -10% !important;
-    left: 55% !important;
+    left: 0 !important;
     position: relative;
   }
   .mission-decorative-image img {
-    width: 150px;
+    width: 80px;
   }
   .vision-decorative-image {
     display: none;
