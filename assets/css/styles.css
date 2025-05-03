@@ -951,10 +951,208 @@ header .navlist a:hover::after {
     padding: 2rem !important;
   }
 }
-/* End of Missdion And Vision Section--- */
+/* End of Mission And Vision Section--- */
+
+/* Testiomonials Section---- */
+.testimonials {
+  margin-top: 60%;
+  background-color: var(--bg-color);
+}
+
+.testimonial-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 0px 1px 1px 0px solid rgba(0, 0, 0, 0.05);
+  
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.testimonial-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #4d4d4d;
+}
+.testimonials-card h6{
+  color: var(--second-text-color);
+}
+.stars i {
+  font-size: 1.2rem;
+  margin-right: 3px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .testimonials{
+    margin-top: 80%;
+  }
+  .testimonial-card {
+    padding: 1.5rem !important;
+  }
+
+  .testimonial-text {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .display-5 {
+    font-size: 2rem;
+  }
+
+  .lead {
+    font-size: 1.1rem;
+  }
+}
+/* End Of Testimonials Section--- */
+
+/* Why Choose Us Section--- */
+.why-choose-us {
+  position: relative;
+}
+
+.image-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-wrapper img {
+  transition: transform 0.5s ease;
+}
+
+.image-wrapper:hover img {
+  transform: scale(1.03);
+}
+
+.content-box {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.content-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.object-fit-cover {
+  object-fit: cover;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+  .content-box {
+    padding: 1.5rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .display-5 {
+    font-size: 2rem;
+  }
+
+  .lead {
+    font-size: 1.1rem;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .col-lg-6 {
+    margin-bottom: 1.5rem;
+  }
+
+  .image-wrapper {
+    height: 300px !important;
+  }
+}
+/* End of Why Choose Us */
 
 /* Footer Section-- */
+.footer-section {
+  background-color: #2c8dfe;
+}
 
+.footer-heading {
+  font-size: 1.25rem;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.footer-heading::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 50px;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.footer-links li a {
+  transition: all 0.3s ease;
+  opacity: 0.8;
+}
+
+.footer-links li a:hover {
+  opacity: 1;
+  padding-left: 5px;
+}
+
+.contact-info i {
+  min-width: 20px;
+}
+
+.social-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-3px);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+  .footer-section {
+    text-align: center;
+  }
+
+  .footer-heading::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .footer-links,
+  .contact-info {
+    margin-top: 2rem;
+  }
+
+  .social-icons {
+    justify-content: center !important;
+    margin-top: 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer-section {
+    padding: 3rem 0;
+  }
+
+  .footer-heading {
+    font-size: 1.1rem;
+  }
+}
 /* Floating Buttons Container - Fixed Positioning */
 .floating-buttons-container {
   position: fixed;
