@@ -127,7 +127,52 @@ function updateSlider() {
         indicator.classList.toggle('active', idx === currentIndex);
     });
 }
+// Page Loader
+// Show loader on initial page load
+document.addEventListener('DOMContentLoaded', function() {
+    const loader = document.getElementById('pageLoader');
+    
+    // Hide loader when page is fully loaded
+    window.addEventListener('load', function() {
+        setTimeout(function() {
+            loader.style.opacity = '0';
+            setTimeout(() => loader.style.display = 'none', 500);
+        }, 300); // Minimum show time for better UX
+    });
+});
 
+// Intercept all navigation for SPA behavior
+document.addEventListener('click', function(e) {
+    if (e.target.tagName === 'A' && e.target.href) {
+        const origin = window.location.origin;
+        if (e.target.href.startsWith(origin)) {
+            e.preventDefault();
+            showLoader();
+            setTimeout(() => {
+                window.location.href = e.target.href;
+            }, 300); // Ensure loader shows before navigation
+        }
+    }
+});
+
+// For AJAX/fetch navigation (SPA)
+window.addEventListener('beforeunload', showLoader);
+
+function showLoader() {
+    const loader = document.getElementById('pageLoader');
+    loader.style.display = 'flex';
+    loader.style.opacity = '1';
+}
+
+// For modern SPA frameworks (React/Vue/Angular)
+if (window.history.pushState) {
+    (function(pushState) {
+        window.history.pushState = function() {
+            showLoader();
+            return pushState.apply(this, arguments);
+        };
+    })(window.history.pushState);
+}
  // Back to top button
  const backToTopBtn = document.querySelector('.back-to-top');
  if (backToTopBtn) {

@@ -36,8 +36,15 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap"
       rel="stylesheet"
     />
+   
   </head>
   <body>
+      <!-- Page Loader -->
+      <div class="page-loader" id="pageLoader">
+        <img src="/assets/images/above_logo.png" alt="Loading..." class="loader-logo">
+        <div class="loader-spinner"></div>
+    </div>
+
     <!-- Navbar Section -->
     <header class="fixed-top">
       <div class="logo">
@@ -278,6 +285,7 @@
     <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/script.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="loader.js"></script>
     <script>
       AOS.init({
         once: true,
