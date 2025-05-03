@@ -244,6 +244,9 @@ header .navlist a:hover::after {
     width: 0px;
     color: var(--second-text-color);
   }
+  header .logo img {
+    width: 100px;
+  }
 }
 @media (max-width: 968px) {
   #menu-icon {
