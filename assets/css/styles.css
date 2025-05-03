@@ -650,14 +650,12 @@ border: solid 1px var(--hover-color);
 }
 
 .decorative-image-left {
-  
-  position: relative;
+   position: relative;
 }
 
 .decorative-image-left img {
   width: 100px;
- 
-  height: auto;
+   height: auto;
  
  
 }
@@ -679,26 +677,13 @@ justify-items: end;
   width: 80%;
 }
 
-.cta-button {
-  display: inline-block;
-  background: #2c8dfe;
-  color: white;
-  padding: 12px 30px;
-  border-radius: 50px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(44, 141, 254, 0.3);
-}
 
-.cta-button:hover {
-  background: #1a73e8;
-  transform: translateY(-3px);
-  box-shadow: 0 6px 20px rgba(44, 141, 254, 0.4);
-}
 
 /* Responsive Design */
 @media (max-width: 992px) {
+  .intro-section{
+    margin-top: -54%;
+  }
   .intro-heading {
     font-size: 2.8rem;
   }
@@ -709,10 +694,15 @@ justify-items: end;
   
   .intro-text {
     width: 100%;
+    margin-left: 0%;
+    margin-top: -12px;
   }
-  
-  .decorative-image {
-    margin-bottom: 40px;
+  .description{
+    width: 100%;
+  }
+  .decorative-image-left {
+    top: 1%;
+    left: -38%;
   }
 }
 
@@ -726,6 +716,111 @@ justify-items: end;
     font-size: 1.4rem;
   }
 }
+/* End of intro section---- */
+
+/* About Section */
+.about-section {
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  padding: 120px 0;
+}
+
+/* Background Image with Fixed Attachment */
+.about-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('https://images.unsplash.com/photo-1579684385127-1ef15d508118?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: -1;
+}
+
+/* Content Styling */
+.about-content {
+  background: var(--second-bg-color);
+  padding: 3rem;
+  border-radius: 12px;
+ 
+  backdrop-filter: blur(5px);
+}
+
+.about-section-title h3{
+  font-size: 3.5rem;
+  font-weight: 700;
+   line-height: 1.2;
+  color: var(--second-text-color);
+  background-color: var(--bg-color);
+  padding: 0.5rem 0.8rem;
+  display: inline-block;
+ }
+
+ .about-section-title p{
+  background-color: var(--bg-color);
+  display: inline-block;
+  padding: 0.5rem 0.8rem;
+
+ }
+.about-content h4{
+  font-weight: 600;
+}
+.about-description p {
+ 
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .about-section-title h3 {
+      font-size: 2.5rem;
+  }
+  
+  .about-content {
+      padding: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-section {
+      padding: 60px 0;
+      min-height: auto;
+  }
+  
+  .about-bg {
+      height: 400px;
+      background-attachment: fixed;
+      position: relative;
+  }
+  
+  .about-content {
+      margin-top: -80px;
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  
+  .container {
+      padding: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .section-title {
+      font-size: 2.2rem;
+  }
+  
+  .about-content {
+      padding: 2rem;
+      margin-top: -60px;
+  }
+}
+/* End Of About Section---- */
 
 
 /* Footer Section-- */
@@ -770,12 +865,12 @@ justify-items: end;
 
 /* Back to Top Button */
 .back-to-top {
-  background: #603c00;
-  display: none;
+  background: var(--second-bg-color);
+
 }
 .back-to-top:hover {
-  background: #ffffff;
-  color: #764a00;
+  background: var(--bg-color);
+  color: var(--second-bg-color);
   transform: scale(1.1);
 }
 

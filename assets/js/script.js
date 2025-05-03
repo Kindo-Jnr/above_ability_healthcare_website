@@ -127,3 +127,20 @@ function updateSlider() {
         indicator.classList.toggle('active', idx === currentIndex);
     });
 }
+
+ // Back to top button
+ const backToTopBtn = document.querySelector('.back-to-top');
+ if (backToTopBtn) {
+     window.addEventListener('scroll', function() {
+         backToTopBtn.classList.toggle('active', window.pageYOffset > 300);
+     });
+     
+     backToTopBtn.addEventListener('click', function(e) {
+         e.preventDefault();
+         window.scrollTo({
+             top: 0,
+             behavior: 'smooth'
+         });
+     });
+ }
+ 
