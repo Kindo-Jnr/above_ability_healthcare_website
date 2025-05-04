@@ -962,7 +962,6 @@ header .navlist a:hover::after {
 .testimonial-card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border: 0px 1px 1px 0px solid rgba(0, 0, 0, 0.05);
-  
 }
 
 .testimonial-card:hover {
@@ -975,7 +974,7 @@ header .navlist a:hover::after {
   line-height: 1.8;
   color: #4d4d4d;
 }
-.testimonials-card h6{
+.testimonials-card h6 {
   color: var(--second-text-color);
 }
 .stars i {
@@ -985,7 +984,7 @@ header .navlist a:hover::after {
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
-  .testimonials{
+  .testimonials {
     margin-top: 65%;
   }
   .testimonial-card {
@@ -1074,6 +1073,9 @@ header .navlist a:hover::after {
 /* Footer Section-- */
 .footer-section {
   background-color: var(--second-bg-color);
+ justify-content: center;
+ justify-items: center;
+ text-align: left;
 }
 
 .footer-heading {
@@ -1101,7 +1103,6 @@ header .navlist a:hover::after {
 .footer-links li a:hover {
   opacity: 1;
   padding-left: 5px;
-
 }
 
 .contact-info i {
@@ -1117,7 +1118,7 @@ header .navlist a:hover::after {
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
   transition: all 0.3s ease;
-text-decoration: none;
+  text-decoration: none;
 }
 
 .social-icons a:hover {
@@ -1127,8 +1128,8 @@ text-decoration: none;
 
 /* Responsive Adjustments */
 @media (max-width: 992px) {
-  .footer-section {
-    text-align: center;
+  .footer-brand {
+    text-align: left;
   }
 
   .footer-heading::after {
