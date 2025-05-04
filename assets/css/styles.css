@@ -1512,6 +1512,9 @@ header .navlist a:hover::after {
 
 /* Responsive Adjustments */
 @media (max-width: 992px) {
+  .services-hero {
+    margin-top: 5rem;
+  }
   .display-5 {
     font-size: 2.2rem;
   }
@@ -1546,8 +1549,93 @@ header .navlist a:hover::after {
     max-height: 50px;
   }
 }
+/* Service Page Done */
 
+/* Career Page----- */
+/* Career Intro Section */
+.career-intro {
+  background-color: var(--bg-color);
+  text-align: center;
+}
 
+/* Hiring Positions */
+.hiring-positions {
+  text-align: left;
+  max-width: 600px;
+}
+
+/* Colored Bullets */
+.hiring-positions .bullet {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--second-text-color);
+  margin-right: 10px;
+}
+.hiring-positions li{
+  color: var(--second-text-color);
+}
+.required-info {
+  color: red;
+  font-weight: bold;
+}
+.section-heading {
+  background-color: #7c7c7c;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.notice {
+  width: 70%;
+}
+.notice-title {
+  background-color: #ebebeb;
+  color: #000;
+  padding: 10px;
+  border-radius: 5px;
+  width: 50%;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.underline-heading {
+  text-decoration: underline;
+}
+.btn-submit {
+  background-color: var(--second-bg-color);
+  color: var(--bg-color);
+  padding: 5px 15px;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+.btn-submit:hover {
+  background-color: var(--bg-color);
+  color: var(--second-bg-color);
+  border: 1px solid var(--second-bg-color);
+}
+
+@media (max-width: 968px) {
+  .career-home {
+    margin-top: 31px;
+  }
+  .contact-home {
+    margin-top: 31px !important;
+  }
+  .lead {
+    font-size: 1rem;
+  }
+  .section-heading {
+    font-size: 1.3rem;
+  }
+  .notice {
+    width: 100%;
+    color: red;
+    font-size: 0.9rem;
+  }
+  .notice-title {
+    width: 100%;
+  }
+}
 
 
 
