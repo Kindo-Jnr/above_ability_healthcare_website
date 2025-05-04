@@ -986,7 +986,7 @@ header .navlist a:hover::after {
 /* Responsive Adjustments */
 @media (max-width: 768px) {
   .testimonials{
-    margin-top: 80%;
+    margin-top: 65%;
   }
   .testimonial-card {
     padding: 1.5rem !important;
@@ -1011,6 +1011,7 @@ header .navlist a:hover::after {
 /* Why Choose Us Section--- */
 .why-choose-us {
   position: relative;
+  background-color: var(--bg-color);
 }
 
 .image-wrapper {
@@ -1072,7 +1073,7 @@ header .navlist a:hover::after {
 
 /* Footer Section-- */
 .footer-section {
-  background-color: #2c8dfe;
+  background-color: var(--second-bg-color);
 }
 
 .footer-heading {
@@ -1100,6 +1101,7 @@ header .navlist a:hover::after {
 .footer-links li a:hover {
   opacity: 1;
   padding-left: 5px;
+
 }
 
 .contact-info i {
@@ -1115,6 +1117,7 @@ header .navlist a:hover::after {
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
   transition: all 0.3s ease;
+text-decoration: none;
 }
 
 .social-icons a:hover {
@@ -1129,7 +1132,7 @@ header .navlist a:hover::after {
   }
 
   .footer-heading::after {
-    left: 50%;
+    left: 5%;
     transform: translateX(-50%);
   }
 
