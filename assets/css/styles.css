@@ -1240,7 +1240,7 @@ header .navlist a:hover::after {
 /* About Us Page----- */
 .about-hero {
   position: relative;
-  margin-top: 10rem;
+  margin-top: 12rem;
 }
 .about-hero-text{
   margin-top: 50px;
@@ -1436,7 +1436,7 @@ header .navlist a:hover::after {
   background: white;
   display: flex;
   flex-direction: column;
-  margin-top: 13rem;
+  margin-top: 11rem;
 }
 
 .service-hero-content {
@@ -1513,7 +1513,7 @@ header .navlist a:hover::after {
 /* Responsive Adjustments */
 @media (max-width: 992px) {
   .services-hero {
-    margin-top: 5rem;
+    margin-top: 6.5rem;
   }
   .display-5 {
     font-size: 2.2rem;

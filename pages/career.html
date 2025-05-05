@@ -36,6 +36,7 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </head>
   <body>
     <!-- Page Loader -->
@@ -57,7 +58,7 @@
       </div>
       <ul class="navlist">
         <li>
-          <a href="index.html" style="--i: 1" class="nav-link">Home</a>
+          <a href="/index.html" style="--i: 1" class="nav-link">Home</a>
         </li>
         <li>
           <a href="/pages/about.html" style="--i: 2" class="nav-link"
@@ -863,58 +864,107 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-12">
-           <!-- Colored Heading -->
-      <h4 class="section-heading text-center">REFERENCES</h4>
-            
+            <!-- Colored Heading -->
+            <h4 class="section-heading text-center">REFERENCES</h4>
+
             <form class="bg-white p-4 p-md-5 rounded-3 shadow-sm">
               <!-- Name & Phone Row -->
               <div class="row mb-4">
                 <!-- Name Input -->
                 <div class="col-md-6 mb-3 mb-md-0">
-                  <label for="fullName" class="form-label fw-bold">1. Full Name</label>
-                  <input type="text" class="form-control" id="fullName" placeholder="John Doe" required>
+                  <label for="fullName" class="form-label fw-bold"
+                    >1. Full Name</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="fullName"
+                    placeholder="John Doe"
+                    required
+                  />
                 </div>
-                
+
                 <!-- Phone Input with Country Code -->
                 <div class="col-md-6">
-                  <label for="phoneNumber" class="form-label fw-bold">Phone Number</label>
+                  <label for="phoneNumber" class="form-label fw-bold"
+                    >Phone Number</label
+                  >
                   <div class="input-group">
-                    <select class="form-select flex-grow-0 w-auto" id="countryCode">
+                    <select
+                      class="form-select flex-grow-0 w-auto"
+                      id="countryCode"
+                    >
                       <option value="+1">+1 (US)</option>
                       <option value="+44">+44 (UK)</option>
                       <option value="+91">+91 (IN)</option>
                       <option value="+81">+81 (JP)</option>
                     </select>
-                    <input type="tel" class="form-control" id="phoneNumber" placeholder="555-123-4567" required>
+                    <input
+                      type="tel"
+                      class="form-control"
+                      id="phoneNumber"
+                      placeholder="555-123-4567"
+                      required
+                    />
                   </div>
                 </div>
               </div>
-              
+
               <!-- Address Input -->
               <div class="mb-4">
-                <label for="streetAddress" class="form-label fw-bold">Street Address</label>
-                <input type="text" class="form-control" id="streetAddress" placeholder="123 Main St" required>
+                <label for="streetAddress" class="form-label fw-bold"
+                  >Street Address</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="streetAddress"
+                  placeholder="123 Main St"
+                  required
+                />
               </div>
-              
+
               <!-- City, State, Zip Row -->
               <div class="row mb-4">
                 <div class="col-md-6 mb-3 mb-md-0">
                   <label for="city" class="form-label fw-bold">City</label>
-                  <input type="text" class="form-control" id="city" placeholder="New York" required>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="city"
+                    placeholder="New York"
+                    required
+                  />
                 </div>
                 <div class="col-md-3 mb-3 mb-md-0">
                   <label for="state" class="form-label fw-bold">State</label>
-                  <input type="text" class="form-control" id="state" placeholder="NY" required>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="state"
+                    placeholder="NY"
+                    required
+                  />
                 </div>
                 <div class="col-md-3">
-                  <label for="zipCode" class="form-label fw-bold">ZIP Code</label>
-                  <input type="text" class="form-control" id="zipCode" placeholder="10001" required>
+                  <label for="zipCode" class="form-label fw-bold"
+                    >ZIP Code</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="zipCode"
+                    placeholder="10001"
+                    required
+                  />
                 </div>
               </div>
-              
+
               <!-- Years Acquainted -->
               <div class="mb-4">
-                <label for="yearsAcquainted" class="form-label fw-bold">Years Acquainted</label>
+                <label for="yearsAcquainted" class="form-label fw-bold"
+                  >Years Acquainted</label
+                >
                 <select class="form-select" id="yearsAcquainted" required>
                   <option value="" selected disabled>Select duration</option>
                   <option value="0-1">Less than 1 year</option>
@@ -927,50 +977,99 @@
               <div class="row mb-4">
                 <!-- Name Input -->
                 <div class="col-md-6 mb-3 mb-md-0">
-                  <label for="fullName" class="form-label fw-bold">2. Full Name</label>
-                  <input type="text" class="form-control" id="fullName" placeholder="John Doe" required>
+                  <label for="fullName" class="form-label fw-bold"
+                    >2. Full Name</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="fullName"
+                    placeholder="John Doe"
+                    required
+                  />
                 </div>
-                
+
                 <!-- Phone Input with Country Code -->
                 <div class="col-md-6">
-                  <label for="phoneNumber" class="form-label fw-bold">Phone Number</label>
+                  <label for="phoneNumber" class="form-label fw-bold"
+                    >Phone Number</label
+                  >
                   <div class="input-group">
-                    <select class="form-select flex-grow-0 w-auto" id="countryCode">
+                    <select
+                      class="form-select flex-grow-0 w-auto"
+                      id="countryCode"
+                    >
                       <option value="+1">+1 (US)</option>
                       <option value="+44">+44 (UK)</option>
                       <option value="+91">+91 (IN)</option>
                       <option value="+81">+81 (JP)</option>
                     </select>
-                    <input type="tel" class="form-control" id="phoneNumber" placeholder="555-123-4567" required>
+                    <input
+                      type="tel"
+                      class="form-control"
+                      id="phoneNumber"
+                      placeholder="555-123-4567"
+                      required
+                    />
                   </div>
                 </div>
               </div>
-              
+
               <!-- Address Input -->
               <div class="mb-4">
-                <label for="streetAddress" class="form-label fw-bold">Street Address</label>
-                <input type="text" class="form-control" id="streetAddress" placeholder="123 Main St" required>
+                <label for="streetAddress" class="form-label fw-bold"
+                  >Street Address</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="streetAddress"
+                  placeholder="123 Main St"
+                  required
+                />
               </div>
-              
+
               <!-- City, State, Zip Row -->
               <div class="row mb-4">
                 <div class="col-md-6 mb-3 mb-md-0">
                   <label for="city" class="form-label fw-bold">City</label>
-                  <input type="text" class="form-control" id="city" placeholder="New York" required>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="city"
+                    placeholder="New York"
+                    required
+                  />
                 </div>
                 <div class="col-md-3 mb-3 mb-md-0">
                   <label for="state" class="form-label fw-bold">State</label>
-                  <input type="text" class="form-control" id="state" placeholder="NY" required>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="state"
+                    placeholder="NY"
+                    required
+                  />
                 </div>
                 <div class="col-md-3">
-                  <label for="zipCode" class="form-label fw-bold">ZIP Code</label>
-                  <input type="text" class="form-control" id="zipCode" placeholder="10001" required>
+                  <label for="zipCode" class="form-label fw-bold"
+                    >ZIP Code</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="zipCode"
+                    placeholder="10001"
+                    required
+                  />
                 </div>
               </div>
-              
+
               <!-- Years Acquainted -->
               <div class="mb-4">
-                <label for="yearsAcquainted" class="form-label fw-bold">Years Acquainted</label>
+                <label for="yearsAcquainted" class="form-label fw-bold"
+                  >Years Acquainted</label
+                >
                 <select class="form-select" id="yearsAcquainted" required>
                   <option value="" selected disabled>Select duration</option>
                   <option value="0-1">Less than 1 year</option>
@@ -983,50 +1082,99 @@
               <div class="row mb-4">
                 <!-- Name Input -->
                 <div class="col-md-6 mb-3 mb-md-0">
-                  <label for="fullName" class="form-label fw-bold">3. Full Name</label>
-                  <input type="text" class="form-control" id="fullName" placeholder="John Doe" required>
+                  <label for="fullName" class="form-label fw-bold"
+                    >3. Full Name</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="fullName"
+                    placeholder="John Doe"
+                    required
+                  />
                 </div>
-                
+
                 <!-- Phone Input with Country Code -->
                 <div class="col-md-6">
-                  <label for="phoneNumber" class="form-label fw-bold">Phone Number</label>
+                  <label for="phoneNumber" class="form-label fw-bold"
+                    >Phone Number</label
+                  >
                   <div class="input-group">
-                    <select class="form-select flex-grow-0 w-auto" id="countryCode">
+                    <select
+                      class="form-select flex-grow-0 w-auto"
+                      id="countryCode"
+                    >
                       <option value="+1">+1 (US)</option>
                       <option value="+44">+44 (UK)</option>
                       <option value="+91">+91 (IN)</option>
                       <option value="+81">+81 (JP)</option>
                     </select>
-                    <input type="tel" class="form-control" id="phoneNumber" placeholder="555-123-4567" required>
+                    <input
+                      type="tel"
+                      class="form-control"
+                      id="phoneNumber"
+                      placeholder="555-123-4567"
+                      required
+                    />
                   </div>
                 </div>
               </div>
-              
+
               <!-- Address Input -->
               <div class="mb-4">
-                <label for="streetAddress" class="form-label fw-bold">Street Address</label>
-                <input type="text" class="form-control" id="streetAddress" placeholder="123 Main St" required>
+                <label for="streetAddress" class="form-label fw-bold"
+                  >Street Address</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="streetAddress"
+                  placeholder="123 Main St"
+                  required
+                />
               </div>
-              
+
               <!-- City, State, Zip Row -->
               <div class="row mb-4">
                 <div class="col-md-6 mb-3 mb-md-0">
                   <label for="city" class="form-label fw-bold">City</label>
-                  <input type="text" class="form-control" id="city" placeholder="New York" required>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="city"
+                    placeholder="New York"
+                    required
+                  />
                 </div>
                 <div class="col-md-3 mb-3 mb-md-0">
                   <label for="state" class="form-label fw-bold">State</label>
-                  <input type="text" class="form-control" id="state" placeholder="NY" required>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="state"
+                    placeholder="NY"
+                    required
+                  />
                 </div>
                 <div class="col-md-3">
-                  <label for="zipCode" class="form-label fw-bold">ZIP Code</label>
-                  <input type="text" class="form-control" id="zipCode" placeholder="10001" required>
+                  <label for="zipCode" class="form-label fw-bold"
+                    >ZIP Code</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="zipCode"
+                    placeholder="10001"
+                    required
+                  />
                 </div>
               </div>
-              
+
               <!-- Years Acquainted -->
               <div class="mb-4">
-                <label for="yearsAcquainted" class="form-label fw-bold">Years Acquainted</label>
+                <label for="yearsAcquainted" class="form-label fw-bold"
+                  >Years Acquainted</label
+                >
                 <select class="form-select" id="yearsAcquainted" required>
                   <option value="" selected disabled>Select duration</option>
                   <option value="0-1">Less than 1 year</option>
@@ -1035,14 +1183,11 @@
                   <option value="5+">5+ years</option>
                 </select>
               </div>
-              
-              
             </form>
           </div>
         </div>
       </div>
     </section>
-
 
     <!-- Transportation form----------- -->
     <div
@@ -1304,18 +1449,19 @@
       <form id="noticeForm">
         <!-- Two Notice Paragraphs -->
         <p>
-          <strong class="text-primary">Above Ability Health Services</strong> is an eqaul opprtunity employer and
-          compelles with all federal and states laws pertaining to employment.
+          <strong class="text-primary">Above Ability Health Services</strong> is
+          an eqaul opprtunity employer and compelles with all federal and states
+          laws pertaining to employment.
           <br />
           The health and safety code, section 459 allows this agency to check
           conviction records of applicants. <br />
           Certain convictions will disqualify you from employment.
         </p>
         <p>
-          <strong class="text-primary">Above Ability Health Services</strong> will check the background of all
-          applicants to determine if the applicant has confirmed allegation of
-          abuse, neglect or exploitation and will not hire anyone with a
-          confirmed case.
+          <strong class="text-primary">Above Ability Health Services</strong>
+          will check the background of all applicants to determine if the
+          applicant has confirmed allegation of abuse, neglect or exploitation
+          and will not hire anyone with a confirmed case.
         </p>
 
         <!-- Physical or Mental Radio Inputs -->
@@ -1356,33 +1502,34 @@
             knowledge. I also certify that I have accounted for all my work
             experience and training on this application, and I have not
             knowingly withheld any fact or circumstance, which I would have
-            disclosed. Above Ability Health Services is hereby authorized to make any
-            investigation of my employment, educational, credit or criminal
-            history through any investigative agencies or bureaus of its choice.
-            I release all relevant parties from all liability of any damages
-            resulting from furnishing such information. I understand that I must
-            be capable to perform the essential functions of the job for which I
-            am applying. I understand that my employment is subject to mobility
-            Evaluation and I understand that my employment may be conditioned
-            upon maintaining a favorable drug/alcohol screening. I also agree
-            that all information concerning said physical examination can be
-            supplied to the authorized agent of this agency, upon request. If
-            employed by Above Ability Health Services, I agree to abide by its rules and
-            regulations. I understand discovery of misrepresentation or omission
-            of facts herein will be cause for immediate dismissal. I authorize
-            Above Ability Health Services to make any inquiry as required to complete my
-            employment file. I understand that operating conditions may require
-            me to temporarily or permanently work shifts other than the one for
-            which I am applying and I agree to such scheduling Changes as
-            directed by my supervisor. I further understand that this
-            application for employment is not an employment Contract. I
-            Understand that if employed such employment is for an indefinite
-            period and can be terminated at will by either party, with at least
-            a two weeks notice in writing, at any time, for any or no reason,
-            and is subject to change in wages, conditions, benefits, and
-            operating policies. If employed, I will be required to complete an
-            employment verification form and also show satisfactory evidence of
-            identity and eligibility for employment within five days.
+            disclosed. Above Ability Health Services is hereby authorized to
+            make any investigation of my employment, educational, credit or
+            criminal history through any investigative agencies or bureaus of
+            its choice. I release all relevant parties from all liability of any
+            damages resulting from furnishing such information. I understand
+            that I must be capable to perform the essential functions of the job
+            for which I am applying. I understand that my employment is subject
+            to mobility Evaluation and I understand that my employment may be
+            conditioned upon maintaining a favorable drug/alcohol screening. I
+            also agree that all information concerning said physical examination
+            can be supplied to the authorized agent of this agency, upon
+            request. If employed by Above Ability Health Services, I agree to
+            abide by its rules and regulations. I understand discovery of
+            misrepresentation or omission of facts herein will be cause for
+            immediate dismissal. I authorize Above Ability Health Services to
+            make any inquiry as required to complete my employment file. I
+            understand that operating conditions may require me to temporarily
+            or permanently work shifts other than the one for which I am
+            applying and I agree to such scheduling Changes as directed by my
+            supervisor. I further understand that this application for
+            employment is not an employment Contract. I Understand that if
+            employed such employment is for an indefinite period and can be
+            terminated at will by either party, with at least a two weeks notice
+            in writing, at any time, for any or no reason, and is subject to
+            change in wages, conditions, benefits, and operating policies. If
+            employed, I will be required to complete an employment verification
+            form and also show satisfactory evidence of identity and eligibility
+            for employment within five days.
           </p>
         </div>
 
@@ -1652,7 +1799,7 @@
           "Above Ability Healthcare: Join our team of passionate healthcare professionals dedicated to making a difference. Explore rewarding career opportunities in a supportive and dynamic environment.!";
       });
     </script>
-     <script>
+    <script>
       // Reset form when modal is closed
       const successModal = document.getElementById("successModal");
       successModal.addEventListener("hidden.bs.modal", () => {
