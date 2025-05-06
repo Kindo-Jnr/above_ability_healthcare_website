@@ -1708,7 +1708,17 @@ header .navlist a:hover::after {
 .modal-content {
   text-align: center;
 }
-
+.modal-btn{
+  background-color: var(--second-bg-color);
+  padding: 0.3rem 0.6rem;
+  color: var(--bg-color);
+  transition: 0.3d;
+}
+.modal-btn:hover{
+  background-color: transparent;
+  color: var(--second-text-color);
+  border: 1px solid var(--second-text-color);
+}
 
 
 
