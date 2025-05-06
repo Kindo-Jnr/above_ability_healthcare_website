@@ -1636,9 +1636,78 @@ header .navlist a:hover::after {
     width: 100%;
   }
 }
+/* End of Career Page------ */
+/* Contact Us Page------- */
 
+.contact-intro {
+  background-color: #f8f9fa;
+}
 
+/* .contact-item .icon {
+  color: #007bff;
+} */
 
+.contact-item p {
+  margin: 0.25rem 0;
+  font-size: 1rem;
+}
+.contact-us-section {
+  padding: 60px 0;
+}
+.contact-form {
+  position: relative;
+  padding-bottom: 60px; /* extra space for the send message link */
+}
+.contact-form h1 {
+  color: var(--second-text-color);
+}
+.icon i{
+  color: var(--second-text-color);
+}
+.send-message-link {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-bottom: 20px;
+}
+/* Optional: style adjustments for inputs */
+.contact-form input,
+.contact-form textarea {
+  margin-bottom: 15px;
+}
+/* Endo of Contact Us Page */
+/* Booking Page----------- */
+/* Center content */
+.booking-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Left Image */
+.booking-image {
+  width: 50%;
+  height: 100vh;
+  background: url("/assets/images/booking.png") no-repeat center center;
+  background-size: cover;
+}
+
+/* Form Styling */
+.booking-form {
+  padding: 40px;
+}
+
+.welcome-text {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--second-text-color);
+}
+
+/* Modal Styling */
+.modal-content {
+  text-align: center;
+}
 
 
 

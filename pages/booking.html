@@ -1,0 +1,204 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Get in touch with us for appointments, inquiries, or support. We're here to help you with accessible and responsive healthcare communication."
+    />
+    <title>ABOVE ABILITY HEALTHCARE | BOOKING</title>
+    <link
+      rel="stylesheet"
+      href="/assets/vendor/bootstrap/css/bootstrap.min.css"
+    />
+    <link rel="icon" type="image/png" href="/assets/images/above_logo.png" />
+
+    <link
+      rel="stylesheet"
+      href="/assets/vendor/bootstrap/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Fonts Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <!-- Page Loader -->
+    <div class="page-loader" id="pageLoader">
+      <img
+        src="/assets/images/above_logo.png"
+        alt="Loading..."
+        class="loader-logo"
+      />
+      <div class="loader-spinner"></div>
+    </div>
+
+    <div class="container">
+      <div class="row booking-container">
+        <!-- Left Image Section -->
+        <div class="col-md-6 d-none d-md-block booking-image"></div>
+
+        <!-- Right Form Section -->
+        <div class="col-md-6 d-flex align-items-center">
+          <div class="booking-form w-100 p-4">
+            <!-- Mobile Logo -->
+            <div class="text-center mb-3 d-block d-md-none">
+              <a href="/index.html">
+                <img
+                  src="/assets/images/above_logo.png"
+                  alt="Company Logo"
+                  class="mobile-logo img-fluid"
+              /></a>
+            </div>
+            <p class="">Welcome to Our Booking Page</p>
+            <h2 class="welcome-text">Book Your Appointment</h2>
+            <p>Please fill out the form below to schedule your appointment.</p>
+
+            <form>
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="First Name"
+                    required
+                  />
+                </div>
+                <div class="col-md-6 mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Last Name"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Email"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <input
+                  type="tel"
+                  class="form-control"
+                  placeholder="Phone Number"
+                  required
+                />
+              </div>
+
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <input
+                    type="date"
+                    class="form-control"
+                    placeholder="Date"
+                    required
+                  />
+                </div>
+                <div class="col-md-6 mb-3">
+                  <input
+                    type="time"
+                    class="form-control"
+                    placeholder="Time"
+                    required
+                  />
+                </div>
+              </div>
+
+              <p>Who are you booking for?</p>
+              <div class="mb-3">
+                <input type="radio" id="self" name="booking-for" required />
+                <label for="self">Myself</label>
+
+                <input
+                  type="radio"
+                  id="someone-else"
+                  name="booking-for"
+                  class="ms-3"
+                />
+                <label for="someone-else">Someone Else</label>
+              </div>
+
+              <!-- Book Now Button (Triggers Modal) -->
+              <button
+                type="button"
+                class="btn btn-submit w-100"
+                data-bs-toggle="modal"
+                data-bs-target="#bookingModal"
+              >
+                Book Now
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Booking Confirmation Modal -->
+    <div
+      class="modal fade"
+      id="bookingModal"
+      tabindex="-1"
+      aria-labelledby="bookingModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="bookingModalLabel">
+              Booking Successful
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            🎉 Congratulations! Your booking has been confirmed.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/assets/js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="loader.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+      });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        document.title =
+          "Get in touch with us for appointments, inquiries, or support. We're here to help you with accessible and responsive healthcare communication.!";
+      });
+    </script>
+    
+  </body>
+</html>

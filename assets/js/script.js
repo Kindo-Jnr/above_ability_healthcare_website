@@ -188,4 +188,6 @@ if (window.history.pushState) {
          });
      });
  }
- 
+ window.addEventListener('load', function() {
+    document.getElementById('pageLoader').style.display = 'none';
+});
