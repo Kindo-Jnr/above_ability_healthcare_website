@@ -1060,10 +1060,6 @@ header .navlist a:hover::after {
     flex-direction: column;
   }
 
-  .col-lg-6 {
-    margin-bottom: 1.5rem;
-  }
-
   .image-wrapper {
     height: 300px !important;
   }
@@ -1073,9 +1069,9 @@ header .navlist a:hover::after {
 /* Footer Section-- */
 .footer-section {
   background-color: var(--second-bg-color);
- justify-content: center;
- justify-items: center;
- text-align: left;
+  justify-content: center;
+  justify-items: center;
+  text-align: left;
 }
 
 .footer-heading {
@@ -1242,15 +1238,15 @@ header .navlist a:hover::after {
   position: relative;
   margin-top: 12rem;
 }
-.about-hero-text{
+.about-hero-text {
   margin-top: 50px;
   color: var(--second-text-color);
 }
-.hero-left img{
+.hero-left img {
   width: 100%;
 }
 
-.hero-right img{
+.hero-right img {
   width: 100%;
 }
 
@@ -1295,8 +1291,7 @@ header .navlist a:hover::after {
 
 /* Responsive Adjustments */
 @media (max-width: 992px) {
-
-  .about-hero{
+  .about-hero {
     margin-top: 7rem;
   }
   .about-hero-text {
@@ -1306,12 +1301,12 @@ header .navlist a:hover::after {
   .yellow-line {
     bottom: -40px;
     width: 100%;
-  height: 70%;
-  left: -10%;
+    height: 70%;
+    left: -10%;
   }
-   .hero-right{
+  .hero-right {
     margin-top: 50px;
-   }
+  }
   .happy-clients-card {
     margin-top: 0;
   }
@@ -1321,24 +1316,23 @@ header .navlist a:hover::after {
   .row {
     flex-direction: column;
   }
-  
+
   .col-lg-4 {
     width: 100%;
   }
-  
- 
+
   .p-4 {
     padding: 1.5rem !important;
   }
-  
+
   h2 {
     font-size: 1.8rem;
   }
-  
+
   p {
     font-size: 0.95rem;
   }
-  
+
   .client-profiles img {
     width: 40px;
     height: 40px;
@@ -1353,7 +1347,7 @@ header .navlist a:hover::after {
 
 .content-card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border: 1px solid rgba(0,0,0,0.05);
+  border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .icon-box {
@@ -1380,16 +1374,16 @@ header .navlist a:hover::after {
   .main-image {
     height: 400px;
   }
-  
+
   .secondary-image {
     height: 90%;
     margin-top: 0px;
   }
-  
+
   .display-5 {
     font-size: 2.2rem;
   }
-  .content-card{
+  .content-card {
     width: 100%;
   }
 }
@@ -1398,18 +1392,18 @@ header .navlist a:hover::after {
   .row {
     flex-direction: column;
   }
-  
+
   .main-image,
   .secondary-image {
     width: 100% !important;
     height: 350px !important;
     margin-top: 2rem;
   }
-  
+
   .secondary-image {
     height: 80% !important;
   }
-  
+
   .content-card {
     padding: 1.5rem !important;
   }
@@ -1419,7 +1413,7 @@ header .navlist a:hover::after {
   .display-5 {
     font-size: 1.8rem;
   }
-  
+
   .icon-box {
     width: 36px;
     height: 36px;
@@ -1452,13 +1446,12 @@ header .navlist a:hover::after {
   overflow: hidden;
 }
 
-
 /* Responsive Adjustments */
 @media (max-width: 992px) {
   h1.display-4 {
     font-size: 2.5rem;
   }
-  
+
   .service-hero-content {
     min-height: 120px;
   }
@@ -1468,11 +1461,11 @@ header .navlist a:hover::after {
   h1.display-4 {
     font-size: 2rem;
   }
-  
+
   .service-hero-content p.lead {
     font-size: 1rem;
   }
-  
+
   .service-hero-content {
     padding: 20px 0;
     min-height: 100px;
@@ -1483,12 +1476,12 @@ header .navlist a:hover::after {
   h1.display-4 {
     font-size: 1.8rem;
   }
-  
+
   .service-hero-content {
     height: auto;
     padding: 30px 0;
   }
-  
+
   .service-hero-image {
     height: calc(100vh - 150px);
   }
@@ -1500,15 +1493,13 @@ header .navlist a:hover::after {
 
 .service-card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border: 1px solid rgba(0,0,0,0.05);
+  border: 1px solid rgba(0, 0, 0, 0.05);
 }
-
 
 .service-logo img {
   max-height: 60px;
   width: auto;
 }
-
 
 /* Responsive Adjustments */
 @media (max-width: 992px) {
@@ -1518,7 +1509,7 @@ header .navlist a:hover::after {
   .display-5 {
     font-size: 2.2rem;
   }
-  
+
   .decorative-bg {
     width: 200px;
     height: 200px;
@@ -1529,7 +1520,7 @@ header .navlist a:hover::after {
   .service-card {
     margin-bottom: 1rem;
   }
-  
+
   .decorative-bg {
     width: 150px;
     height: 150px;
@@ -1540,11 +1531,11 @@ header .navlist a:hover::after {
   .display-5 {
     font-size: 1.8rem;
   }
-  
+
   .lead {
     font-size: 1rem;
   }
-  
+
   .service-logo img {
     max-height: 50px;
   }
@@ -1573,7 +1564,7 @@ header .navlist a:hover::after {
   background-color: var(--second-text-color);
   margin-right: 10px;
 }
-.hiring-positions li{
+.hiring-positions li {
   color: var(--second-text-color);
 }
 .required-info {
@@ -1661,7 +1652,7 @@ header .navlist a:hover::after {
 .contact-form h1 {
   color: var(--second-text-color);
 }
-.icon i{
+.icon i {
   color: var(--second-text-color);
 }
 .send-message-link {
@@ -1708,23 +1699,180 @@ header .navlist a:hover::after {
 .modal-content {
   text-align: center;
 }
-.modal-btn{
+.modal-btn {
   background-color: var(--second-bg-color);
   padding: 0.3rem 0.6rem;
   color: var(--bg-color);
   transition: 0.3d;
 }
-.modal-btn:hover{
+.modal-btn:hover {
   background-color: transparent;
   color: var(--second-text-color);
   border: 1px solid var(--second-text-color);
 }
 
+/* Blogs Page------- */
+.blog-intro {
+  background-color: var(--bg-color);
+}
+.blog-hero-heading {
+  font-size: 1.9rem;
+  font-weight: 700;
+  width: 70%;
+  justify-content: center !important;
+  text-align: center !important;
+  align-self: center !important;
+}
 
+.blog-intro-image {
+  height: 100%;
+  transition: transform 0.3s ease;
+}
 
+.blog-meta {
+  border-top: 1px solid #eee;
+  padding-top: 1rem;
+}
 
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+  .blog-hero-heading {
+    font-size: 1.3rem;
+    width: 100%;
+  }
+}
 
+@media (max-width: 768px) {
+  .blog-content {
+    padding-left: 0 !important;
+    margin-top: 2rem;
+  }
 
+  .lead {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .blog-intro-image {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+/* Content Section------ */
+.content-section {
+  position: relative;
+}
+
+/* Custom column for 5 items */
+.col-xl-2-4 {
+  flex: 0 0 auto;
+}
+
+.content-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* Responsive Adjustments */
+
+@media (max-width: 767.98px) {
+  .content-card {
+    padding: 1.5rem !important;
+  }
+}
+/* Blogs Section---- */
+.blog-section {
+  background-color: var(--bg-color);
+}
+
+.blog-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+.badge {
+  background-color: var(--second-bg-color);
+  padding: 0.6rem 0.9rem !important;
+}
+.blog-image {
+  height: 200px;
+  overflow: hidden;
+}
+
+.blog-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.blog-card:hover .blog-image img {
+  transform: scale(1.05);
+}
+
+.blog-content {
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 200px);
+}
+
+.read-more {
+  transition: all 0.3s ease;
+  margin-top: auto;
+  align-self: flex-start;
+  color: var(--second-bg-color);
+}
+
+.read-more:hover {
+  color: var(--text-color) !important;
+}
+
+.read-more:hover i {
+  transform: translateX(3px);
+}
+
+.read-more i {
+  transition: transform 0.3s ease;
+}
+
+.badge {
+  font-weight: 500;
+  padding: 0.35em 0.65em;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+  .blog-image {
+    height: 180px;
+  }
+}
+
+@media (max-width: 768px) {
+  .blog-card {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .blog-image {
+    height: 220px;
+  }
+}
+
+@media (max-width: 576px) {
+  .blog-image {
+    height: 200px;
+  }
+
+  .blog-content {
+    padding: 1.5rem !important;
+  }
+}
 
 /* Animations--------------------- */
 /* Navbar Animation Effect---- */
