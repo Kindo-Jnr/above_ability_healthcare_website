@@ -1874,6 +1874,26 @@ header .navlist a:hover::after {
   }
 }
 
+/* Read More Page-------------- */
+.read-more-section {
+  margin-top: 11rem;
+}
+@media (max-width: 992px) {
+  .read-more-section {
+    margin-top: 6.5rem;
+  }
+}
+.blog-button a{
+  background-color: var(--second-bg-color);
+padding: 0.7rem 0.9rem;
+color: var(--bg-color);
+transition: 0.3s;
+}
+.blog-button a:hover{
+  background-color: transparent;
+  border: 1px solid var(--second-bg-color);
+  color: var(--second-bg-color);
+}
 /* Animations--------------------- */
 /* Navbar Animation Effect---- */
 @keyframes slideAnimation {
