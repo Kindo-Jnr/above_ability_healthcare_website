@@ -1231,6 +1231,15 @@ header .navlist a:hover::after {
     font-size: 19px;
   }
 }
+.scroll-hint {
+ 
+  animation: float 2s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
 /* End Of Home Page------ */
 
 /* About Us Page----- */
@@ -1244,10 +1253,13 @@ header .navlist a:hover::after {
 }
 .hero-left img {
   width: 100%;
+  border: 7px solid var(--second-bg-color);
+  border-radius: 0px 8px 0px 20px;
 }
 
 .hero-right img {
   width: 100%;
+
 }
 
 /* Yellow line styling */
