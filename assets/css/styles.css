@@ -727,7 +727,7 @@ header .navlist a:hover::after {
 /* Responsive Design */
 @media (max-width: 992px) {
   .intro-section {
-    margin-top: -43%;
+    margin-top: -20%;
   }
   .intro-heading {
     font-size: 2.8rem;
@@ -1232,13 +1232,17 @@ header .navlist a:hover::after {
   }
 }
 .scroll-hint {
- 
-  animation: float 2s ease-in-out infinite;
+  animation: float 1.6s ease-in-out infinite;
 }
 
 @keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
 }
 /* End Of Home Page------ */
 
@@ -1259,7 +1263,6 @@ header .navlist a:hover::after {
 
 .hero-right img {
   width: 100%;
-
 }
 
 /* Yellow line styling */
@@ -1495,7 +1498,7 @@ header .navlist a:hover::after {
   }
 
   .service-hero-image {
-    height: calc(100vh - 150px);
+    height: calc(82vh - 150px);
   }
 }
 /* Services Section */
@@ -1621,6 +1624,9 @@ header .navlist a:hover::after {
   .career-home {
     margin-top: 31px;
   }
+  .career-intro {
+    margin-top: -60px;
+  }
   .contact-home {
     margin-top: 31px !important;
   }
@@ -1643,7 +1649,7 @@ header .navlist a:hover::after {
 /* Contact Us Page------- */
 
 .contact-intro {
-  background-color: #f8f9fa;
+  background-color: var(--bg-color);
 }
 
 /* .contact-item .icon {
@@ -1895,13 +1901,13 @@ header .navlist a:hover::after {
     margin-top: 6.5rem;
   }
 }
-.blog-button a{
+.blog-button a {
   background-color: var(--second-bg-color);
-padding: 0.7rem 0.9rem;
-color: var(--bg-color);
-transition: 0.3s;
+  padding: 0.7rem 0.9rem;
+  color: var(--bg-color);
+  transition: 0.3s;
 }
-.blog-button a:hover{
+.blog-button a:hover {
   background-color: transparent;
   border: 1px solid var(--second-bg-color);
   color: var(--second-bg-color);
