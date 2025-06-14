@@ -836,7 +836,7 @@ header .navlist a:hover::after {
 
   .about-bg {
     height: 400px;
-    background-attachment: fixed;
+    background-attachment: scroll;
     position: relative;
   }
 
